@@ -1,0 +1,42 @@
+{
+    "name": "@resolute/status",
+    "version": "1.0.0",
+    "description": "Build process",
+    "main": "lib",
+    "types": "lib",
+    "scripts": {
+        "build": "npm run install && npx tsc",
+        "release": "npx np",
+        "prepublishOnly": "npm run build",
+        "install": "[ -e node_modules ] || npm install --no-save"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/resolute/status.git"
+    },
+    "bugs": {
+        "url": "https://github.com/resolute/status/issues"
+    },
+    "homepage": "https://github.com/resolute/status",
+    "author": "Resolute Digital",
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "np": "*",
+        "typescript": "*"
+    },
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "error",
+        "status",
+        "statuscode"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "ISC"
+}
