@@ -1,41 +1,51 @@
 {
-    "name": "@resolute/status",
-    "version": "1.0.2",
-    "description": "Status class",
-    "main": "lib",
-    "types": "lib",
-    "scripts": {
-        "build": "npx tsc",
-        "release": "npx np",
-        "prepublishOnly": "npm run build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/resolute/status.git"
-    },
-    "bugs": {
-        "url": "https://github.com/resolute/status/issues"
-    },
-    "homepage": "https://github.com/resolute/status",
-    "author": "Resolute Digital",
-    "engines": {
-        "node": ">=10.0.0"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "np": "*",
-        "typescript": "*"
-    },
-    "files": [
-        "lib"
-    ],
-    "keywords": [
-        "error",
-        "status",
-        "statuscode"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "license": "ISC"
+  "name": "@resolute/status",
+  "version": "1.0.2",
+  "description": "Status extends Error and includes statusCode property for use with HTTP",
+  "main": "./",
+  "types": "./",
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "release": "np",
+    "prepublishOnly": "npm test && npm run build",
+    "clean": "del-cli *.js *.js.map *.d.ts",
+    "test": "echo TODO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolute/status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/resolute/status/issues"
+  },
+  "homepage": "https://github.com/resolute/status",
+  "author": "Resolute Digital",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "del-cli": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "np": "*",
+    "prettier": "*",
+    "typescript": "*"
+  },
+  "keywords": [
+    "error",
+    "status",
+    "statuscode"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC"
 }
