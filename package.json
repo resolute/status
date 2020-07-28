@@ -1,6 +1,6 @@
 {
   "name": "@resolute/status",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Status extends Error and includes statusCode property for use with HTTP",
   "main": "./",
   "types": "./",
